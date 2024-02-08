@@ -3,7 +3,6 @@ import "./style.css";
 import "./index.css";
 
 export const Button = ({onClick,backgroundColor,size,label,width,textColor,hoverBg,disabled,style,autoFocus,...props }) => {
-  console.log("props",props);
   return (
     <button
       type="button"
