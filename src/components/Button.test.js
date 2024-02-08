@@ -50,7 +50,7 @@ test('renders disabled button', () => {
 
 test('does not call onClick when disabled', () => {
   const handleClick = jest.fn();
-  const { getByText } = render(<Primary label="Click me" onClick={handleClick} disabled={false}/>);
+  const { getByText } = render(<Primary label="Click me" onClick={handleClick} disabled/>);
   const buttonElement = getByText('Click me');
   buttonElement.click();
   expect(handleClick).toHaveBeenCalledTimes(0);
